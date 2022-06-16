@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Camera Server</title>
+        <link rel="shortcut icon" type="image/png" href="/iconn.png" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <h1></h1>
+
+        <input id="roomId" type="text" />
+        <button id="joinBtn">Join</button>
+        <button id="leaveBtn">Leave</button>
+
+        <p id="notification"></p>
+
+        <div id="localVideo-container">
+            <video autoplay playsinline muted></video>
+        </div>
+
+        <div id="videos">
+            <div id="videoGrid" class="grid-container"></div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+        <script src="js/webrtc.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
